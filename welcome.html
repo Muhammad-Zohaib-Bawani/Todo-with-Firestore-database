@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>To-Do</title>
+    
+</head>
+<body >
+      <div class="main">
+
+        <div class="heading">
+            
+            <h2>To-DO LIST <img src="./images/icon.png" alt=""> </h2>
+     <div class="row">
+        
+        <input type="text" name="zohaib" id="inp" placeholder="Add Your Text" maxlength="19">
+
+        <i class='bx bxs-add-to-queue add'  id="addTodo"></i>
+
+        <i class="fa-sharp fa-solid fa-trash"  id="deleteAll" onclick="deleteAll()"></i>
+    
+    </div>
+    <ol id="ul" class="getul">  </ol> 
+</div>
+
+
+
+</div>
+    <script src="app2.js"  type="module"></script>
+</body>
+</html>

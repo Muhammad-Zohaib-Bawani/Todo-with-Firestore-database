@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+    <title>login Signup</title>
+</head>
+
+<body>
+    <div class="card">
+        <input type="checkbox" id="chk" aria-hidden="true">
+        <div class="content">
+            <div class="front">
+                <div class="inner">
+                    <h1>Login</h1><br>
+                    <div class="box">
+                        <p class="text">Sign in with :</p> <br>
+                        <button class="loging" class="icon">
+                            <i class='bx bxl-google'></i>
+                        </button>
+                        <button  class="icon" id="loginf">
+                            <i class='bx bxl-facebook'></i>
+                        </button>
+                        <button class="icon">
+                            <i class='bx bxl-twitter'></i>
+                        </button>
+                    </div> 
+                    <input type="email" required id="lemail" class="input" placeholder="Email" >
+                    
+                    <input type="password" required id="lpass" class="input" placeholder="Password">
+                    
+                  
+                    <div class="center"> <button id="lbtn" class="btn" type="submit" >Login</button></div>
+                    <div class="center2">
+                        <p class="para">Don't have an account ?</p><br><label for="chk" aria-hidden="true" class="lbl">Signup</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="back">
+                <div class="inner">
+                    <h1>Sign up</h1>
+                    <div class="box">
+                        <p class="text">Sign up with :</p> <br>
+                        <button class="loging" class="icon">
+                            <i class='bx bxl-google'></i>
+                        </button>
+                        <button  class="icon" class="loginf">
+                            <i class='bx bxl-facebook'></i>
+                        </button>
+                        <button class="icon">
+                            <i class='bx bxl-twitter'></i>
+                        </button>
+                    </div>
+                    <input type="text" class="input" placeholder="Username" required minlength="3">
+                    
+                    <input type="email" required id="semail" class="input" placeholder="Email">
+                   
+                    <input type="password" required id="spass" class="input" placeholder="Password">
+                    
+                   
+                    <div class="center">  <button id="sbtn" class="btn" for="chk" type="submit">Sign up</button></div>
+                    <div class="center2">
+                        <p class="para">Already have an account ?</p><br><label for="chk" aria-hidden="true" class="lbl">Login</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    background: #002765;
+    display: flex;
+
+
+}
+
+.heading {
+    width: 100%;
+    max-width: 540px;
+    background: #3498db;
+    /* border: 2px solid #3498db;
+    box-shadow: 0 0 25px #3498db; */
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+
+.heading h2 {
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.heading h2 img {
+    width: 40px;
+    margin-left: 10px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    /* margin-bottom: 25px; */
+
+}
+
+#inp {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-size: large;
+}
+
+
+ol li {
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.row i {
+
+    font-size: 30px;
+    color: #002765;
+    padding: 10px;
+}
+
+.edit {
+    font-size: 20px;
+    color: #002765;
+    position: absolute;
+    right: 50px;
+    top: 15px;
+}
+
+.del {
+    font-size: 20px;
+    color: #002765;
+    position: absolute;
+    right: 10px;
+    top: 15px;
+}
+
+.line {
+    color: #002765;
+    font-weight: 600;
+
+}
+
+@media screen and (max-width: 600px) {
+
+
+    .heading {
+        max-width: 96vw;
+        margin-left: 5px;
+        margin-right: 5px;
+
+    }
+
+    #inp {
+        padding: 0;
+        font-size: small;
+        margin: 0;
+    }
+
+    .edit {
+        right: 45px;
+        top: 12px;
+    }
+
+    .del {
+        top: 12px;
+        right: 10px;
+    }
+
+    .row i {
+        font-size: 20px;
+    }
+
+    ol li {
+        padding: 12px 8px 12px 0;
+    }
+
+
+}
+
+@media screen and (max-width: 400px) {
+
+    .main {
+        width: 200%;
+        height: 200%;
+    }
+
+    .row i {
+        padding-right: 0;
+        padding-left: 10px;
+    }
+
+    #addTodo {
+        font-size: 30px;
+        padding-right: 20px;
+        position: absolute;
+        right: 60px;
+    }
+
+    #deleteAll {
+        font-size: 25px;
+        padding-right: 5px;
+        position: absolute;
+        right: 40px;
+    }
+
+    #inp {
+        height: 30px;
+    }
+}
